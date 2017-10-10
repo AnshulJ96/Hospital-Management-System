@@ -1,2 +1,0 @@
-HMS 
-mysql and php
