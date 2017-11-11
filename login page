@@ -1,14 +1,14 @@
 <?php
 $username=$_POST['username'];
 $password=$_POST['password'];
-$con=@mysqli_connect("localhost","abc","anshuljaiswal1996") or die(mysql_error());
+$con=@mysqli_connect("localhost","abc","qwerty123") or die(mysqli_error());
 $db=@mysqli_select_db("hms",$con)or die(mysql_error());
 
 $sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 
 $result=mysqli_query($sql);
 
-$count=mysql_num_rows($result);
+$count=mysqli_num_rows($result);
 
 if($count==1)
 {
